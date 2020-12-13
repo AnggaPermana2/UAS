@@ -1,0 +1,12 @@
+ <?php  
+ //login_success.php  
+ session_start();  
+ if(isset($_SESSION["username"]))  
+ {  
+      header("location:relawan/index.php");   
+ }  
+ else  
+ {  
+      header("location:index.php");  
+ }  
+ ?>  
